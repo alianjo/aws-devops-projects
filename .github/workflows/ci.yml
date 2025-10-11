@@ -8,7 +8,7 @@ on:
     - cron: "0 6 * * 1" # Weekly Monday run
 
 permissions:
-  contents: read  # Only need read access for validation
+  contents: read  # Only read access needed
 
 jobs:
   validate:
@@ -26,10 +26,18 @@ jobs:
           config: '.markdownlint.yml'
         continue-on-error: true
 
-      # --- Link Validation ---
+      # --- YAML Validation ---
+      - name: Validate YAML files
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          file_or_dir: .
+          config_file: .yamllint.yml
+        continue-on-error: true
+
+      # --- Link Validation (LinkedIn excluded) ---
       - name: Check Links in README
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --verbose --no-progress ./README.md
+          args: --verbose --no-progress --exclude "https://www.linkedin.com" ./README.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
