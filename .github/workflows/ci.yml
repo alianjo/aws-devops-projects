@@ -1,0 +1,35 @@
+name: AWS Solution Architect Portfolio CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1" # Weekly Monday run
+
+permissions:
+  contents: read  # Only need read access for validation
+
+jobs:
+  validate:
+    name: 🔍 Validate Markdown, YAML, and Links
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # --- Markdown Linting ---
+      - name: Lint Markdown files
+        uses: avto-dev/markdown-lint@v1
+        with:
+          config: '.markdownlint.yml'
+        continue-on-error: true
+
+      # --- Link Validation ---
+      - name: Check Links in README
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --verbose --no-progress ./README.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
