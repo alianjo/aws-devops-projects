@@ -1,7 +1,7 @@
-# 🌩️ AWS Solution Architect Projects
+# 🌩️ AWS DevOps Projects
 
 Welcome!  
-This repository is my **AWS Solution Architect Portfolio**, where I collect all my hands-on projects demonstrating architecture, automation, and DevOps best practices on AWS.  
+This repository is my **AWS DevOps Portfolio**, where I collect all my hands-on projects demonstrating architecture, automation, and DevOps best practices on AWS.  
 Each project is built with real-world scenarios and Infrastructure as Code (IaC) principles.
 
 ---
