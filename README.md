@@ -1,4 +1,4 @@
-# 🌩️ AWS DevOps Projects
+# AWS DevOps Projects
 
 Welcome!  
 This repository is my **AWS DevOps Portfolio**, where I collect all my hands-on projects demonstrating architecture, automation, and DevOps best practices on AWS.  
