@@ -34,7 +34,4 @@ Each project repository includes documentation, Terraform code, architecture dia
 | 8 | Multi-Region High Availability | Build cross-region architecture with Route53 failover and data replication. |
 | 9 | Cost Optimization Dashboard | Create a dashboard for AWS cost monitoring and optimization insights. |
 
-📫 **Connect with me**:  
-- [LinkedIn](https://www.linkedin.com/in/alianjo)  
-- [GitHub](https://github.com/alianjo)
 
