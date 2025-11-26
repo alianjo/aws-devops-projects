@@ -21,6 +21,7 @@ Each project repository includes documentation, Terraform code, architecture dia
 | 2 | **Immutable Infrastructure on AWS** | Demonstrates creating immutable infrastructure using Terraform — ensuring consistency, version control, and safe deployment practices. | [aws-immutable-infra](https://github.com/alianjo/aws-immutable-infra) |
 | 3 | **aws-lambda-ec2-backup** | A serverless AWS backup automation system using Lambda and EventBridge. Automatically creates and cleans up EC2 volume snapshots on a schedule built with Terraform. | [aws-lambda-ec2-backup](https://github.com/alianjo/aws-lambda-ec2-backup) |
 | 4 | Three-Tier Web App on AWS | EC2 + RDS + ALB with Terraform — showcase scalability and fault tolerance. |  [aws-three-tier-webapp-terraform](https://github.com/alianjo/aws-three-tier-webapp-terraform) |
+| 5 | AWS serverless API | API Gateway (HTTP API) → Lambda → DynamoDB. Provisioned with Terraform. CI via GitHub Actions. |  [aws-serverless-terraform-backend](https://github.com/alianjo/aws-serverless-terraform-backend) |
 
 ---
 
